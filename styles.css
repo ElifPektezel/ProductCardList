@@ -58,7 +58,11 @@
   transition: opacity 0.3s ease;
 }
 .btn-details:hover {
-  background-color: #FF6000;
+  background-color: #d85503;
+}
+.btn-details:focus {
+  outline-color: transparent; 
+ 
 }
 .card-text{
   -webkit-box-orient: vertical;

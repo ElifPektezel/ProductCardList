@@ -2,7 +2,7 @@ function createProductCard(product) {
   const discountAmount = (product.price * product.discount) / 100;
   const discountedPrice = product.price - discountAmount;
 
-  // images özelliğini kontrol et
+
   const carouselItems =
     product.images && product.images.length > 0
       ? product.images
@@ -56,7 +56,7 @@ function createProductCard(product) {
             <i class="fa fa-star"></i>
             <i class="fa-regular fa-star"></i>
           </div>
-          <button class="btn btn-primary btn-details">Detaylar</button>
+          <button class="btn-details" >Detaylar</button>
         </div>
       </div>
     </div>
