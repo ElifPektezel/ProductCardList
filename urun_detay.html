@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ürün Detay Sayfası</title>
+        <link
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./urun_detay.css">
+        <script src="https://kit.fontawesome.com/ee2bcfeb71.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img id="product-image" src alt alt="Ürün Resmi"
+                        class="img-fluid">
+                        <div class="col">
+                            <h3>Ürün Detayları</h3>
+                            <p>Burada ürünün detaylı açıklamaları yer alır.</p>
+                        </div>
+                </div>
+                <div class="col-md-6 product-info">
+                    <h2 id="product-name"></h2>
+                    <p id="product-label"></p>
+                    <div class="info">
+                        <div class="price">
+                            <h3 id="product-price"></h3>
+
+                        </div>
+                        <div class="ratings-container bigger visible"
+                            data-bind="css: {visible: isInStock(), hidden: !isInStock()}">
+
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div id="comments-container">
+                                <a href="javascript:;"
+                                    class="product-comments hbus 548b2abc-bc07-417a-98f1-21ee3291f6e9"
+                                    data-bind="css: {expanded : isProductReviewVisible()}, click: showReviewsTab, attr: { 'data-hbus' : userInformation() &amp;&amp; userInformation().userId &amp;&amp; isEventReady() ? productDetailHbus('CommentNumberClick'): ''}"
+                                    data-hbus="{&quot;events&quot;:{&quot;click&quot;:[&quot;davinci&quot;]},&quot;data&quot;:{&quot;eventName&quot;:&quot;CommentNumberClick&quot;,&quot;categoryHierarchy&quot;:[{&quot;id&quot;:&quot;2147483642&quot;,&quot;name&quot;:&quot;Telefon&quot;},{&quot;id&quot;:&quot;371965&quot;,&quot;name&quot;:&quot;Cep Telefonu&quot;},{&quot;id&quot;:&quot;60005201&quot;,&quot;name&quot;:&quot;Android Telefonlar&quot;}],&quot;merchant&quot;:{&quot;id&quot;:&quot;fa97b636-7585-459a-90b2-da8a8aeec6bc&quot;,&quot;name&quot;:&quot;beyazay teknoloji&quot;},&quot;category&quot;:{&quot;id&quot;:&quot;60005201&quot;,&quot;name&quot;:&quot;android-telefonlar&quot;},&quot;products&quot;:[{&quot;product_id&quot;:&quot;HBC00005MLJAA&quot;,&quot;price&quot;:&quot;45699&quot;,&quot;sku&quot;:&quot;HBCV00005MLJW5&quot;,&quot;product_status&quot;:&quot;InStock&quot;,&quot;shipping_type&quot;:&quot;super-hizli&quot;,&quot;listing_id&quot;:&quot;ce5c61b1-828a-45bd-bac2-7bbcf7a902cc&quot;,&quot;position&quot;:1}],&quot;channel&quot;:&quot;desktop&quot;},&quot;type&quot;:&quot;productDetail&quot;}">
+                                    <span content="22">22</span> Değerlendirme
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="product-discount"></p>
+
+                    <p id="product-description"></p>
+                    <div class="form-group">
+                        <label for="quantity">Miktar:</label>
+                        <input type="number" id="quantity" class="form-control"
+                            value="1">
+                    </div>
+                    <button class="btn btn-primary">Sepete Ekle</button>
+                    <div class="customer-action">
+                        <ul>
+                            <li><div class="like"></div>Beğen</li>
+                            <li><div class="add"></div>Listeme Ekle</li>
+                            <li> <div class="ex"></div>Karşılaştır</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <script src="products.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

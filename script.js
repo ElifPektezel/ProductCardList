@@ -89,5 +89,15 @@ document.addEventListener("DOMContentLoaded", function () {
           const facIcn = this.querySelector(".favourite");
           facIcn.style.opacity = "0";
       });
+
+      card.addEventListener("click", function () {
+        const productIndex = Array.from(productRow.children).indexOf(this.parentElement);
+        const clickedProduct = products[productIndex];
+        const productDetailPageUrl = `urun_detay.html?id=${clickedProduct.id}`;
+        window.location.href = productDetailPageUrl;
+    });
+    
+    
+    
   });
 });
